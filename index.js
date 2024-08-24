@@ -34,19 +34,19 @@ function renderTasks(tasks) {
 
         const checkButton = document.createElement('button');
         checkButton.id = 'crud-btn';
-        checkButton.innerHTML = '<img src="Check.png" alt="Check">';
+        checkButton.innerHTML = '<img src="Check.png" class="bounce" alt="Check">';
         checkButton.addEventListener('click', () => done_task(index));
         
 
         
         const editButton = document.createElement('button');
         editButton.id = 'crud-btn';
-        editButton.innerHTML = '<img src="Icon.png" alt="Check">';
+        editButton.innerHTML = '<img src="Icon.png" class="bounce" alt="Check">';
         editButton.addEventListener('click', () => edit_task(index));
 
         const deleteButton = document.createElement('button');
         deleteButton.id = 'crud-btn';
-        deleteButton.innerHTML = '<img src="TrashSimple.png" alt="Check">';
+        deleteButton.innerHTML = '<img src="TrashSimple.png" class="bounce" alt="Check">';
         deleteButton.addEventListener('click', () => del_task(index));
 
 
